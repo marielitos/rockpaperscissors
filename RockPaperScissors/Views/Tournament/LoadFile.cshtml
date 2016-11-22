@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "LoadFileView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (ViewBag.Winners != null) {
+<div class="jumbotron">
+    <h1>The champions!</h1>
+    <p class="lead">@ViewBag.Winners</p>
+</div>
+}
+
+<h2>New tournament</h2>
+@using (Html.BeginForm("LoadFile", "Tournament", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label for="file">Upload txt file:</label>
+    <input type="file" name="file" id="file" /><br><br>
+    <input type="submit" value="Upload File" />
+    <br><br>
+    @ViewBag.Message
+}

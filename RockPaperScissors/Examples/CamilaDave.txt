@@ -1,0 +1,22 @@
+[
+ [
+  [
+   [ ["Armando", "P"], ["Dave", "S"] ]
+   [ ["Richard", "P"], ["Michael", "R"] ]
+  ]
+  [
+   [ ["Allen", "S"], ["Omer", "P"] ]
+   [ ["John", "R"], ["Robert", "P"] ]
+  ]
+ ]
+ [
+  [
+   [ ["Samantha", "S"], ["Camila", "R"] ]
+   [ ["Sara", "R"], ["Cecilia", "S"] ]
+  ]
+  [
+   [ ["Maria", "S"], ["Cornelia", "P"] ]
+   [ ["Priscila", "R"], ["Rosa", "S"] ]
+  ]
+ ]
+]

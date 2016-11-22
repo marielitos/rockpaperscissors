@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Top";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Top Players</h2>
+@if (ViewBag.List != null)
+{
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in ViewBag.List)
+            {
+                <tr>
+                    <td>@row.Name</td>
+                    <td>@row.Score</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    using (Html.BeginForm("CleanDataBase", "Tournament", FormMethod.Post))
+    {
+        <input type="submit" value="Clean up the scores and start." />
+        @ViewBag.Message
+    }
+
+}
+@ViewBag.Message
